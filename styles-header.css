@@ -1,158 +1,119 @@
-main{
-    min-height: 450px;
-    width: 100%;
-    background-color: white;
-    display: table;
-}
-h1{
-    color: #555555;
-    margin-top: -5px;
-    font-size: 24px;
-}
-p{
-    color: #A76E52;
-}
-.name{
-    padding-top: 24px;
-}
-.sub-tittle{
-    margin-top: -15px;
-}
-.left-side{
-    float: left;
-    margin: 18px 36px 18px 42px;
-    width: 160px;
-    font-size: 13px;
-    line-height: 1.5;
-    white-space: normal;
-    word-wrap: break-word;
-    position: relative;
-    z-index: 2;
-}
-.right-side{
-    width: 95%;
-}
-.top-side{
-    width: 100%;
-    min-height: 100px;
+body{
+    font-size: 14px;
+    line-height: 1.4;
+    color: #111;
+    text-align: left;
+    font-family: PopuLato, "Helvetica Neue", Helvetica, sans-serif;
     background-color: #eee;
-    margin-bottom: 10px;
+    margin: 0;
+    padding: 0;
 }
-.post{
-    position: relative;
-    margin-bottom: 9px;
+header h1{
+    color: white;
+    font-size: 25px;
+    height: 27px;
+    white-space: nowrap;
+    padding-top: 20px;
+    margin: 19px 0px 15px 18px;
 }
-.inside-post{
-    background-color:#eee;
-    border:1px solid #ddd;
-    padding: 10px;
-    border-radius: 3px;
+.top-header{
+    display: flex;
+    justify-content: space-between;  
+    background-color: #111111;
+    height: 45px;
+    color: white;
+    font-size: 13px;
+}
+.left-side-header{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+.left-side-header a{
+    margin-left: 2px;
+    padding: 5px;
+    font-size: 13px;
+    color: #ddd;
+    text-decoration: none;
+    opacity: .5;
+}
+.left-side-header a:hover{
+    color: white;
+    opacity: .9;
+}
+.left-side-header a:active{
+    opacity: .9;
+}
+.right-side-header{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.right-side-header div{
     margin-right: 25px;
 }
-.inside-post button:hover{
-    cursor: pointer;
-}
-.inside-comment{
-    width: 100%;
-    margin-bottom: 3px;
-    max-height: 300px;
-    overflow: hidden;
-    overflow-wrap:break-word;
-    height: 59px;
-    rows:="3";
-}
-div .inside-post a{
-    text-decoration: none;
-    font-size: 13px;
-    color: #555555;
-}
-div .inside-post a:hover{
-    text-decoration: underline;
-}
-.controltabs{
-    height: 28px;
-    padding-top: 18px;
-    position: relative;
-    margin: 0;
-}
-.controltabs li {
-    float: left;
-}
-.controltabs li a.currentControlTab {
+.right-side-header img{
+    width: 26px;
     height: 27px;
-    background-color: white !important;
-    padding-bottom: 0;
-    color: #333;
-    border-width: 1px 1px 0;
-    border-style: solid;
-    border-color: #ddd;
+    border-radius: 2px;
 }
-
-.controltabs li a {
+.profile{
+    display: flex;
+}
+.profile i{
+    margin-top: 10px;
+    padding-left: 1px;
+}
+header .sub-header{
+    background-color: #004878;
+    margin-top: -19px;
+    height: 94px;
+}
+#logo {
+    float: left;
+    height: 27px;
+    padding: 3px;
+}
+nav a{
+    float: left;
+    margin-left: 10px;
+    position: relative;
+    color: white;
+    opacity: .5;
     display: block;
-    font-size: 14px;
-    line-height: 26px;
-    padding: 1px 8px;
+    line-height: 2.1em;
     text-decoration: none;
-    color: #666 !important;
-    transition-property: background-color,color;
+    font-size: 14px;
+    padding: 0 9px;
+    white-space: nowrap;
+    transition-property: color, opacity, background;
     transition-duration: .2s;
 }
-div .time{
-    position: relative;
-    right: 50px;
-    float: right;
-    top: -60px;
+nav a:hover{
+    color: white;
+    opacity: .9;
+    border-bottom: 2px solid white;
 }
-li{
-    list-style-type: none;
+div .help{
+    margin-right:0;
 }
-.controltabs a{
+.help i{
+    width: 20px;
+    height: 20px;
+    padding: 1px;
+    margin-top: 10px;
+}
+a.active{
+    opacity: .9;
+}
+a.directory{
+    opacity: .9;
+    border-bottom: 2px solid white;
+}
+.send-email{
     text-decoration: none;
+    color: #0033CC;
 }
-.follow button{
-    height: 24px !important;
-    line-height: 20px !important;
-    font-size: 13px !important;
-    background-color: #FAFAFA;
-    border-radius: 3px;
-    border: 1px solid #CCCCCC;
-}
-.follow button:hover{
-    cursor: pointer;
-}
-.media{
-    float: left;
-    margin-right: 18px;
-    padding-top: 50px;
-}
-.media a{
-    text-decoration: none;
-}
-.media a:hover{
+.send-email:hover{
     text-decoration: underline;
-}
-div .bottom-side{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-}
-.left-bottom-side{
-    width: calc(65% - 30px);
-    height: 150px;
-
-}
-.right-bottom-side{
-    width: 35%;  
-    height: 150px; 
-}
-.bottom-side{
-    background-color: white;
-    position: relative;
-    top: 0;
-    padding: 17px 42px 18px 0px;
-    min-height: 296px;
-    z-index: 0;
-    box-shadow: 0 1px 0px #ddd;
-    display: flex;
 }
